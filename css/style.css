@@ -43,6 +43,19 @@ body {
     4px 40px 2px #FF0000;
 }
 
+.container {
+    max-width: 960px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    color: white;
+    padding-top: 4rem;
+}
+
 /*******************************************
 2 - Header
 ********************************************/
@@ -50,19 +63,12 @@ body {
 .header-img {
     max-width: 100vw;
     height: 100vh;
-    position: relative;
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(29, 25, 25, 0.8)), url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     text-align: center;
-}
-
-.header__container {
-    max-width: 960px;
-    height: 100vh;
-    margin: 0 auto;
 }
 
 .header__title {
@@ -101,7 +107,8 @@ body {
 }
 
 .header__links:hover {
-    background-color: rgb(97, 0, 148);
+    background-color: rgb(68, 0, 105);
+    color: rgb(202, 59, 59);
     transition: 500ms;
 }
 
@@ -116,18 +123,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
 
 .about-us__container {
     max-width: 960px;
     margin: 0 auto;
-}
-.about-us__title {
-    font-size: 4rem;
-    font-family: var(--primary-font);
-    color: white;
-    padding-top: 4rem;
 }
 
 .abous-us__paragraph {
@@ -178,18 +178,25 @@ body {
 2 - Tales
 ********************************************/
 
-.tales {
+.parallax {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient( rgba(8, 0, 14, 0.959), rgba(0, 0, 0, 0.9));
+    height: 70vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(29, 25, 25, 0.8)), url(../img/bg_coffinfang_completo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tales__title {
+.tales {
+    width: 100%;
+    height: 100vh;
+}
+
+.tales__subtitle {
     color: white;
-    font-family: var(--primary-font);
-    font-size: 4rem;
-    padding: 5rem;
+    padding-top: 10%;
 }
