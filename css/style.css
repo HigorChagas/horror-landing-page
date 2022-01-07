@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Eater&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Eater&family=Lato:ital,wght@0,100;0,300;0,700;1,100;1,300;1,400&display=swap');
 
 :root {
     --primary-font: 'Astloch', cursive;
     --secondary-font: 'Eater', cursive;
+    --tertiary-font: 'Lato', sans-serif;
 }
 
 * {
@@ -18,6 +19,7 @@
 
 body {
     background-color: black;
+    scroll-behavior: smooth;
 }
 .blood {
     color:silver;
@@ -175,7 +177,7 @@ h2 {
 }
 
 /*******************************************
-2 - Tales
+2 - Parallax
 ********************************************/
 
 .parallax {
@@ -191,6 +193,20 @@ h2 {
     align-items: center;
 }
 
+.parallax__title {
+    font-size: 4rem;
+    font-family: var(--primary-font);
+    color: white;
+    padding: 0;
+    
+}
+
+
+/*******************************************
+3 - Tales
+********************************************/
+
+
 .tales {
     width: 100%;
     height: 100vh;
@@ -198,5 +214,70 @@ h2 {
 
 .tales__subtitle {
     color: white;
-    padding-top: 10%;
+    margin-top: 20px;
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+}
+
+.tale__img {
+    max-width: 960px;
+    max-height: 60%;
+    border-radius: 20px;
+}
+
+.tale__line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(156, 111, 180);
+}
+
+.tale__text {
+    color: white;
+    font-size: 1.1rem;
+    font-family: var(--tertiary-font);
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+
+#dots {
+    transition: 500ms;
+}
+
+#more {
+    display: none;
+}
+
+#myBtn {
+    font-size: 1.4rem;
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.read-more::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+
+}
+
+.read-less::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
 }
