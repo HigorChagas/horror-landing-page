@@ -225,18 +225,14 @@ h2 {
     border-radius: 20px;
 }
 
-.tale__line {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(156, 111, 180);
-}
-
 .tale__text {
     color: white;
     font-size: 1.1rem;
     font-family: var(--tertiary-font);
     letter-spacing: 1.2px;
     text-align: center;
+    border-top: 0.4px solid #fff;
+    margin: 30px;
 }
 
 #dots {
